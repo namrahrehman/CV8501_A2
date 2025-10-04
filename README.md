@@ -10,11 +10,11 @@ We compare:
 All models are evaluated on Accuracy, Macro/Weighted F1, and one-vs-rest AUC.
 
 ## Structure
-preprocessing/ → Script to create 7-option VQA dataset
-vit/ → ViT fine-tuning and zero-shot evaluation scripts
-vlm_llava_med/ → Closed-set scoring for LLaVA-Med results
-data/ → Place HAM10000 dataset (train/val/test CSV + images)
-results/ → Outputs and plots
+- **preprocessing/** – Script to create 7-option VQA dataset  
+- **vit/** – ViT fine-tuning and zero-shot evaluation scripts  
+- **vlm_llava_med/** – Closed-set scoring for LLaVA-Med results  
+- **data/** – Place HAM10000 dataset (train/val/test CSV + images)  
+- **results/** – Outputs and plots  
 
 
 ## Quick Start
