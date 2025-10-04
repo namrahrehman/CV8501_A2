@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.png
+*.json
+*.jsonl
+*.pt
+*.bin
+*.ckpt
+*.log
+.env
+.ipynb_checkpoints/
+.vscode/
+results/
+data/preprocessed_224_full/images/
+vit_ham10000_finetuned/

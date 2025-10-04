@@ -1,0 +1,23 @@
+name: cv8501-a2
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch=2.2
+  - pytorch-cuda=12.1
+  - cudatoolkit=12.1
+  - pip
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - pillow
+  - tqdm
+  - pip:
+      - transformers==4.43.3
+      - accelerate==0.33.0
+      - bitsandbytes==0.43.1
+      - deepspeed==0.14.2
+      - sentencepiece
