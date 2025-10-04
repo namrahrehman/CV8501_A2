@@ -1,0 +1,46 @@
+{
+  "dataset_name": "HAM10000_VQA_Fair",
+  "description": "Fair VQA dataset with exact same splits as ViT for fair comparison",
+  "format": "Multiple Choice Questions (7 options)",
+  "total_samples": 10015,
+  "train_samples": 7210,
+  "val_samples": 802,
+  "test_samples": 2003,
+  "classes": {
+    "akiec": "Actinic keratoses and intraepithelial carcinoma (Bowen's disease)",
+    "bcc": "Basal cell carcinoma",
+    "bkl": "Benign keratosis-like lesion",
+    "df": "Dermatofibroma",
+    "nv": "Melanocytic nevus",
+    "mel": "Melanoma",
+    "vasc": "Vascular lesion"
+  },
+  "question_format": {
+    "type": "Multiple Choice",
+    "options_per_question": 7,
+    "description": "Each question presents all 7 diagnostic options, with one correct answer"
+  },
+  "fair_comparison": {
+    "note": "Splits exactly match ViT dataset for fair comparison",
+    "vit_train": 7210,
+    "vit_val": 802,
+    "vit_test": 2003,
+    "vqa_train": 7210,
+    "vqa_val": 802,
+    "vqa_test": 2003
+  },
+  "files": {
+    "train": "train.json",
+    "validation": "val.json",
+    "test": "test.json",
+    "images": "images/"
+  },
+  "training_recommendations": {
+    "batch_size": 8,
+    "learning_rate": 2e-05,
+    "epochs": 2,
+    "warmup_steps": 50,
+    "max_length": 512,
+    "note": "Fair comparison with ViT baseline"
+  }
+}
